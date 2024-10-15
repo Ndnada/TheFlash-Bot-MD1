@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import fs from 'fs'
 import jimp from 'jimp'
 let handler = async (m, { conn, usedPrefix, text, args, command }) => {
-let wm = '◄⏤͟͟͞ESCONAR ELREZZEL '
+let wm = '◄⏤͟͟͞ES co na r  EL Pa aa ri ed '
 
 
 let fakecontact = { 'key': { 'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': '𝐸𝐿-𝐷𝐸𝑺𝑂𝐾𝐸𝐼𝑌 𝐵𝑂𝑇' }, 'message': { 'contactMessage': { 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` } }, 'participant': '0@s.whatsapp.net' };
@@ -52,7 +52,7 @@ await conn.sendContact(m.chat, [[`201098829097` + `@s.whatsapp.net`, wm]], vn, {
  forwardingScore: 2023,
 isForwarded: false, 
  externalAdReply: {  
- title: '𝑇𝛨𝛯 𝐿𝛩𝛻𝛯𝐿𝑌 𝛩𝑊𝛮𝛯𝑅 𝛩𝐹', 
+ title: 'BOT ESCONR ELFAGER', 
  body: ' 201098829097', 
  sourceUrl: 'https://whatsapp.com/channel/0029VacWb364dTnEKmVWd628',
  thumbnail: vn2,
