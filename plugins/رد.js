@@ -2,8 +2,8 @@ let handler = m => m
  handler.all = async function (m) { 
  let chat = global.db.data.chats[m.chat] 
   
- if (/^احا$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat,`*احــم احــم 😳*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
+ if (/^😂|😂😂$/i.test(m.text) ) { //sem prefixo 
+     conn.reply(m.chat,`*تدوم ياض*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
 await conn.sendMessage(m.chat, { react: { text: '🐧', key: m.key } })
   }
 
