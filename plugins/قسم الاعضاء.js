@@ -99,7 +99,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 };
 
 handler.help = ['main']
-handler.command = ['قائمة_الاعضاء']
+handler.command = ['قائمة الاعضاء']
 
 export default handler
 
