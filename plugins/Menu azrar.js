@@ -39,8 +39,8 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
 ╯───────────────────⟢ـ
 > ˼🤖˹↜ الــبــوت↶
 ╮───────────────────⟢ـ
-┆⚙️ ↜اسـم الـبـوت↶﹝ESCONAR EL FAGERR﹞
-┆🪄 ↜الـمـطـور ↶﹝ESCONAR_BOoT﹞
+┆⚙️ ↜اسـم الـبـوت↶﹝ESCONAR_BOT﹞
+┆🪄 ↜الـمـطـور ↶﹝ESCONAR﹞
 ┆📌 ↜الـتـشـغـيـل ↶﹝${uptime}﹞
 ┆🔖 ↜الــمــســتـخـدمـيـن ↶﹝${rtotalreg}﹞
 ╯───────────────────⟢ـ
