@@ -73,7 +73,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 };
 
 handler.help = ['main']
-handler.command = ['قسم_الادوات']
+handler.command = ['قسم الادوات']
 
 export default handler
 
