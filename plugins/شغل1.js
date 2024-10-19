@@ -61,7 +61,7 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
       await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
     }
 
-    if (command === 'شغل') {
+    if (command === 'تشغيل') {
       const messa = await prepareWAMessageMedia({ image: { url: data.resultado.image } }, { upload: conn.waUploadToServer });
       let msg = generateWAMessageFromContent(m.chat, {
         viewOnceMessage: {
@@ -177,7 +177,7 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
   }
 };
 
-handler.command = /^(play.1|play.2|1شغل)$/i;
+handler.command = /^(حمل|تشغيل)$/i;
 export default handler;
 
 async function isValidYouTubeLink(link) {
