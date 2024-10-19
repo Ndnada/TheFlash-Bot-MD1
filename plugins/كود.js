@@ -6,10 +6,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
 
     const uptime = process.uptime();
     const uptimeString = `${Math.floor(uptime / 60)} دقائق ${Math.floor(uptime % 60)} ثواني`;
-    m.react('📂');
+    m.react('😍');
 
     if (device !== 'desktop' && device !== 'web') {      
-        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://qu.ax/uuioT.jpg''}}, { upload: conn.waUploadToServer });
+        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://qu.ax/ScUij.jpg'}}, { upload: conn.waUploadToServer });
         const interactiveMessage = {
             body: { text: `\n◞❐ *وقـت الـتـشـغـيـل: ${uptimeString}*`.trim() },
             footer: { text: ` *ممنوع سب للبوت لانك سبيت للبوت = سبيت المطور تمتع بالبوت ولا تكتر اسبام للبوت اذا كان لديك مشكله او تريد اضافه اوامر اخري جديده تواصل مع المطور المطور* ◞❐wa.me/201098829097`.trim() },  
@@ -33,8 +33,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '◡̈⃝˼‏👤˹ ━━|قسم الجروب│━━˼👤˹◡̈⃝',
                                             title: 'ESCONAR-BOT',
-                                            description: '◡̈⃝˼‏👤˹ ━━|قسم الجروب│━━˼👤˹◡̈⃝',
-                                            id: '.اسكونر1'
+                                            description: '◡̈⃝     ----| ‏👤˹ ━━| .اسكونر7˹◡̈⃝',
+                                            id: 'ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -44,8 +44,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎',
                                             title: 'ESCONAR-BOT',
-                                            description: '🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎',
-                                            id: '.اسكونر2'
+                                            description: '🚻 ◡̈⃝☠︎︎━━ | اسكونر1. │━━☠︎︎🚻 ◡̈⃝‎',
+                                            id: '.ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -55,8 +55,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '🂱◡̈⃝📿━━│قسم الديني│━━◡̈⃝🂱📿',
                                             title: 'ESCONAR-BOT',
-                                            description: '🂱◡̈⃝📿━━│قسم الديني│━━◡̈⃝🂱📿',
-                                            id: '.اسكونر3'
+                                            description: '🂱◡̈⃝📿━━│اسكونر2.│━━◡̈⃝🂱📿',
+                                            id: '.ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -66,8 +66,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '◡̈⃝˼‏🏌˹ ━━|قسم الترفيه│━━˼‏🕺🏻˹◡̈⃝',
                                             title: 'ESCONAR-BOT',
-                                            description: '◡̈⃝˼‏🏌˹ ━━|قسم الترفيه│━━˼‏🕺🏻˹◡̈⃝',
-                                            id: '.اسكونر4'
+                                            description: '◡̈⃝˼‏🏌˹ ━━| اسكونر3.│━━˼‏🕺🏻˹◡̈⃝',
+                                            id: '.ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -77,8 +77,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '⬇️◡̈⃝ ━━│ قسم التحميل │━━◡̈⃝⬇️',
                                             title: 'ESCONAR-BOT',
-                                            description: '⬇️◡̈⃝ ━━│ قسم التحميل │━━◡̈⃝⬇️',
-                                            id: '.اسكونر5'
+                                            description: '⬇️◡̈⃝ ━━│اسكونر4.│━━◡̈⃝⬇️',
+                                            id: '.ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -88,8 +88,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '🔃✠━━│قسم الـتحـويل│━━✠◡̈⃝🔃',
                                             title: 'ESCONAR-BOT',
-                                            description: '🔃✠━━│قسم الـتحـويل│━━✠◡̈⃝🔃',
-                                            id: '.اسكونر6'
+                                            description: '🔃✠━━│اسكونر5.│━━✠◡̈⃝🔃',
+                                            id: '.ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -99,8 +99,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '◡̈⃝⚙️❏━━│قسم الادوات│━━❏◡̈⃝⚙️',
                                             title: 'ESCONAR-BOT',
-                                            description: '◡̈⃝⚙️❏━━│قسم الايدت│━━❏◡̈⃝⚙️',
-                                            id: '.اسكونر7'
+                                            description: '◡̈⃝⚙️❏━━│اسكونر6.│━━❏◡̈⃝⚙️',
+                                            id: '.ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -110,8 +110,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '🏦❏━━│قسم البنك│━━❏◡̈⃝🏦',
                                             title: 'ESCONAR-BOT',
-                                            description: '🏦❏━━│قسم البنك│━━❏◡̈⃝🏦',
-                                            id: '.اسكونر8'
+                                            description: '🏦❏━━| اسكونر7.│━━❏◡̈⃝🏦',
+                                            id: 'ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -121,8 +121,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '◡̈⃝📢❏━━│قسم الاصوات│━━❏◡̈⃝📢',
                                             title: 'ESCONAR-BOT',
-                                            description: '◡̈⃝📢❏━━│قسم الاصوات│━━❏◡̈⃝📢',
-                                            id: '.اسكونر9'
+                                            description: '◡̈⃝📢❏━━│اسكونر8.│━━❏◡̈⃝📢',
+                                            id: '.ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -132,8 +132,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '◡̈⃝˼‏👤˹ ━━|قسم الانمي│━━˼✨˹◡̈⃝',
                                             title: 'ESCONAR-BOT',
-                                            description: '◡̈⃝˼‏👤˹ ━━|قسم الانمي│━━˼✨˹◡̈⃝',
-                                            id: '.اسكونر10'
+                                            description: '---| اسكونر9.│━━˼✨˹◡̈⃝',
+                                            id: 'ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -143,8 +143,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '🔧◡̈⃝❏━━│قسم المطور│━━❏◡̈⃝🔧',
                                             title: 'ESCONAR-BOT',
-                                            description: '🔧◡̈⃝❏━━│قسم المطور│━━❏◡̈⃝🔧',
-                                            id: '.اسكونر11'
+                                            description: '🔧◡̈⃝❏━━│اسكونر10.│━━❏◡̈⃝🔧',
+                                            id: 'ESCONAR-BOT'
                                         }
                                     ]
                                 },
@@ -154,7 +154,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                         {
                                             header: '🧚🏼‍♂️◡̈⃝❏━━│مطوري│━━❏◡̈⃝🧚🏼‍♂️',
                                             title: 'ESCONAR-BOT',
-                                            description: '🧚🏼‍♂️◡̈⃝❏━━│مطوري│━━❏◡̈⃝🧚🏼‍♂️',
+                                            description: '🧚🏼‍♂️◡̈⃝❏━━│اسكونر11.│━━❏◡̈⃝🧚🏼‍♂️',
                                             id: '.المطور'
                                         }
                                     ]
@@ -165,7 +165,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                     {
                         name: 'cta_url',
                         buttonParamsJson: JSON.stringify({
-                            display_text: 'مطوري👑',
+                            display_text: 'مطوري😘',
                             url: 'https://wa.me/201098829097',
                             merchant_url: ''
                         })
@@ -198,5 +198,5 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
 };
 handler.help = ['imgboton'];
 handler.tags = ['For Test'];
-handler.command = /^(help|menu)$/i;
+handler.command = /^(menu)$/i;
 export default handler;
