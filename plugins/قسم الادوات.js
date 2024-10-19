@@ -19,7 +19,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     let uptime = clockString(_uptime)
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     if (!(who in global.db.data.users)) throw `✳️ لم يتم العثور على المستخدم في قاعدة البيانات الخاصة بي`
-    let videoUrl = 'https://telegra.ph/file/73ef7488ba7f7f3e613ee.mp4'
+    let videoUrl = 'https://qu.ax/uuioT.jpg''
     let user = global.db.data.users[who]
     let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
     let { min, xp, max } = xpRange(user.level, global.multiplier)
@@ -39,8 +39,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ┇≡ *◡̈⃝⌚📌وقـت الـتـشـغـيـل ${uptime}
 ┇≡ *◡̈⃝⏳📌الـتـوقـيـت ${date}
 ┇≡ *◡̈⃝🕊📌عـدد الـمـسـتـخـدمـيـن ${rtotalreg}
-┇≡ *◡̈⃝🧚🏻‍♀️📌 اسـم الـبوت : ₛₐfᵣₒₜ bₒₜ🤺🔥*
-┇≡ *◡̈⃝⚙️📌 الـمنـصه  Heroku *
+┇≡ *◡̈⃝🧚🏻‍♀️📌 اسـم الـبوت : ESCONAR-BOT*
+┇≡ *◡̈⃝⚙️📌 الـمنـصه  ESCONAR*
 ┗━━━━━━━━━━⬣
 ┏━━⊜
 ❐╎◡̈⃝🎎❯ .طقم⌉
@@ -73,7 +73,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 };
 
 handler.help = ['main']
-handler.command = ['سفروت7']
+handler.command = ['اسكونر7']
 
 export default handler
 
