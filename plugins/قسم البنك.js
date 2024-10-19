@@ -22,7 +22,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
     if (!(who in global.db.data.users)) throw '✳️ لم يتم العثور على المستخدم في قاعدة البيانات الخاصة بي';
 
-    let videoUrl = 'https://telegra.ph/file/73ef7488ba7f7f3e613ee.mp4';
+    let videoUrl = 'https://qu.ax/uuioT.jpg';
     let user = global.db.data.users[who];
     let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = user;
     let { min, xp, max } = xpRange(user.level, global.multiplier);
@@ -44,8 +44,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ┇≡ *◡̈⃝⌚📌وقـت الـتـشـغـيـل ${uptime}
 ┇≡ *◡̈⃝⏳📌الـتـوقـيـت ${date}
 ┇≡ *◡̈⃝🕊📌عـدد الـمـسـتـخـدمـيـن ${rtotalreg}
-┇≡ *◡̈⃝🧚🏻‍♀️📌 اسـم الـبوت : ESCONAR BOT😜
-┇≡ *◡̈⃝⚙️📌 الـمنـصه :ESCONAR😜
+┇≡ *◡̈⃝🧚🏻‍♀️📌 اسـم الـبوت : ESCONAR-BOT*
+┇≡ *◡̈⃝⚙️📌 الـمنـصه  ESCONAR*
 ┗━━━━━━━━━━⬣
 ┏━━⊜
 ❐╎◡̈⃝🏦❯ .البنك⌉
@@ -76,7 +76,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 // تعريف الأوامر والمساعدات
 handler.help = ['main'];
-handler.command = ['قسم البنك'];
+handler.command = ['اسكونر8'];
 
 export default handler;
 
