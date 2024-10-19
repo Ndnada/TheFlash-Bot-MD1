@@ -34,7 +34,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                             header: '◡̈⃝˼‏👤˹ ━━|قسم الجروب│━━˼👤˹◡̈⃝',
                                             title: 'ESCONAR BOT😜',
                                             description: '◡̈⃝˼‏👤˹ ━━|قسم الجروب│━━˼👤˹◡̈⃝',
-                                            id: '.قسم_الجروب'
+                                            id: '.قسم الجروب'
                                         }
                                     ]
                                 },
