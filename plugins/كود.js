@@ -1,4 +1,4 @@
-import { prepareWAMessageMedia, generateWAMessageFromContent, getDevice } from '@whiskeysockets/baileys'
+import { prepareWAMessageMedia, generateWAMessageFromContent, getDevice } from  @whiskeysockets/baileys 
 
 const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     const device = await getDevice(m.key.id);
@@ -6,15 +6,15 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
 
     const uptime = process.uptime();
     const uptimeString = `${Math.floor(uptime / 60)} دقائق ${Math.floor(uptime % 60)} ثواني`;
-    m.react('😍');
+    m.react( 👑 );
 
-    if (device !== 'desktop' && device !== 'web') {      
-        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://qu.ax/ScUij.jpg'}}, { upload: conn.waUploadToServer });
+    if (device !==  desktop  && device !==  web ) {      
+        var joanimiimg = await prepareWAMessageMedia({ image: {url:  https://qu.ax/ScUij.jpg }}, { upload: conn.waUploadToServer });
         const interactiveMessage = {
             body: { text: `\n◞❐ *وقـت الـتـشـغـيـل: ${uptimeString}*`.trim() },
             footer: { text: ` *ممنوع سب للبوت لانك سبيت للبوت = سبيت المطور تمتع بالبوت ولا تكتر اسبام للبوت اذا كان لديك مشكله او تريد اضافه اوامر اخري جديده تواصل مع المطور المطور* ◞❐wa.me/201098829097`.trim() },  
             header: {
-                title: `◞❐*نورت يحب قائمة الاوامر*\n*◞❐ تفضل القائمة يا:* @${mentionId.split('@')[0]}`,
+                title: `◞❐*نورت يحب قائمة الاوامر*\n*◞❐ تفضل القائمة يا:* @${mentionId.split( @ )[0]}`,
                 subtitle: ``,
                 hasMediaAttachment: true,
                 imageMessage: joanimiimg.imageMessage,
@@ -22,128 +22,140 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
             nativeFlowMessage: {
                 buttons: [
                     {
-                        name: 'single_select',
+                        name:  single_select ,
                         buttonParamsJson: JSON.stringify({
-                            title: '⌝قـائـمـه الاوامـر⌞',
+                            title:  ⌝قـائـمـه الاوامـر⌞ ,
                             sections: [
                                 {
-                                    title: 'List',
-                                    highlight_label: 'ON',
+                                    title:  List ,
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '◡̈⃝˼‏👤˹ ━━|قسم الجروب│━━˼👤˹◡̈⃝',
-                                            title: 'ESCONAR-BOT',
-                                            description: 'اسكونر1.'
+                                            header:  ◡̈⃝˼‏👤˹ ━━|قسم الجروب│━━˼👤˹◡̈⃝ ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر1. ,
+                                            id: .اسكونر 2# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر2.'
+                                            header:  🚻 ◡̈⃝☠︎︎━━ |قسم الاعضاء│━━☠︎︎🚻 ◡̈⃝‎ ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر2.‎ ,
+                                            id: .اسكونر 2# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '🂱◡̈⃝📿━━│قسم الديني│━━◡̈⃝🂱📿',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر3.'
+                                            header:  🂱◡̈⃝📿━━│قسم الديني│━━◡̈⃝🂱📿 ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر3. ,
+                                            id:  .اسكونر 3# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '◡̈⃝˼‏🏌˹ ━━|قسم الترفيه│━━˼‏🕺🏻˹◡̈⃝',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر4.'
+                                            header:  ◡̈⃝˼‏🏌˹ ━━|قسم الترفيه│━━˼‏🕺🏻˹◡̈⃝ ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر4.‎ ,
+                                            id: .اسكونر 2# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '⬇️◡̈⃝ ━━│ قسم التحميل │━━◡̈⃝⬇️',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر5.'
+                                            header:  ⬇️◡̈⃝ ━━│ قسم التحميل │━━◡̈⃝⬇️ ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر5. ,
+                                            id:  .اسكونر 5# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '🔃✠━━│قسم الـتحـويل│━━✠◡̈⃝🔃',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر6.'
+                                            header:  🔃✠━━│قسم الـتحـويل│━━✠◡̈⃝🔃 ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر6. ,
+                                            id:  .اسكونر 6# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '◡̈⃝⚙️❏━━│قسم الادوات│━━❏◡̈⃝⚙️',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر7.'
+                                            header:  ◡̈⃝⚙️❏━━│قسم الادوات│━━❏◡̈⃝⚙️ ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر7. ,
+                                            id:  .اسكونر 7# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '🏦❏━━│قسم البنك│━━❏◡̈⃝🏦',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر8.'
+                                            header:  🏦❏━━│قسم البنك│━━❏◡̈⃝🏦 ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر8. ,
+                                            id:  .اسكونر 8# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '◡̈⃝📢❏━━│قسم الاصوات│━━❏◡̈⃝📢',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر9.'
+                                            header:  ◡̈⃝📢❏━━│قسم الاصوات│━━❏◡̈⃝📢 ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر9. ,
+                                            id:  .اسكونر 9# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '◡̈⃝˼‏👤˹ ━━|قسم الانمي│━━˼✨˹◡̈⃝',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر10.'
+                                            header:  ◡̈⃝˼‏👤˹ ━━|قسم الانمي│━━˼✨˹◡̈⃝ ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر10. ,
+                                            id:  .اسكونر 10# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '🔧◡̈⃝❏━━│قسم المطور│━━❏◡̈⃝🔧',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر11.'
+                                            header:  🔧◡̈⃝❏━━│قسم المطور│━━❏◡̈⃝🔧 ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description:  اسكونر11. ,
+                                            id:  .اسكونر 11# 
                                         }
                                     ]
                                 },
                                 {
-                                    highlight_label: 'ON',
+                                    highlight_label:  ON ,
                                     rows: [
                                         {
-                                            header: '🧚🏼‍♂️◡̈⃝❏━━│مطوري│━━❏◡̈⃝🧚🏼‍♂️',
-                                            title: 'ESCONAR-BOT',
-                                            description:' اسكونر12.'
+                                            header:  🧚🏼‍♂️◡̈⃝❏━━│مطوري│━━❏◡̈⃝🧚🏼‍♂️ ,
+                                            title:  ESCONAR BOT😜 ,
+                                            description: ━━│مطوري│━ ,
+                                            id:  .المطور 
                                         }
                                     ]
                                 }
@@ -151,22 +163,22 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                         })
                     },
                     {
-                        name: 'cta_url',
+                        name:  cta_url ,
                         buttonParamsJson: JSON.stringify({
-                            display_text: 'مطوري😘',
-                            url: 'https://wa.me/201098829097',
-                            merchant_url: ''
+                            display_text:  مطوري😜 ,
+                            url:  https://wa.me/201098829097 ,
+                            merchant_url:   
                         })
                     },
                     {
-                        name: 'single_select',
+                        name:  single_select ,
                         buttonParamsJson: JSON.stringify({
-                            display_text: 'call',
-                            id: '.صوره'
+                            display_text:  call ,
+                            id:  .صوره 
                         })
                     }
                 ],
-                messageParamsJson: ''
+                messageParamsJson:   
             }
         };        
 
@@ -181,10 +193,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
         conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id });
 
     } else {
-        conn.sendFile(m.chat, 'JoAnimi•Error.jpg', m);      
+        conn.sendFile(m.chat,  JoAnimi•Error.jpg , m);      
     }    
 };
-handler.help = ['imgboton'];
-handler.tags = ['For Test'];
+handler.help = [ imgboton ];
+handler.tags = [ For Test ];
 handler.command = /^(menu)$/i;
 export default handler;
