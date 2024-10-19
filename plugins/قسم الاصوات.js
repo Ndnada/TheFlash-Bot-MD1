@@ -64,7 +64,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 };
 
 handler.help = ['main']
-handler.command = ['قسم_الاصوات']
+handler.command = ['قسم الاصوات']
 
 export default handler
 
