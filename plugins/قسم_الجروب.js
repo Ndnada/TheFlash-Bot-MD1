@@ -79,7 +79,7 @@ import { createHash } from 'crypto'
        }, { quoted: m });
    };
    handler.help = ['main']
-   handler.command = ['قسم_الجروب'] 
+   handler.command = ['قسم الجروب'] 
 
    export default handler
    function clockString(ms) {
