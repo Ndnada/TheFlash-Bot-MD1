@@ -24,7 +24,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     let readMore = more.repeat(850);
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
-  await conn.sendMessage(m.chat, { react: { text: '📀', key: m.key } })
+  await conn.sendMessage(m.chat, { react: { text: '📂', key: m.key } })
   const zack = 'https://qu.ax/rovX.jpg'
   const mentionId = m.key.participant || m.key.remoteJid;
  
@@ -39,7 +39,7 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
 ╯───────────────────⟢ـ
 > ˼🤖˹↜ الــبــوت↶
 ╮───────────────────⟢ـ
-┆⚙️ ↜اسـم الـبـوت↶﹝ESCONAR﹞
+┆⚙️ ↜اسـم الـبـوت↶﹝ESCONAR_BOT﹞
 ┆🪄 ↜الـمـطـور ↶﹝ESCONAR﹞
 ┆📌 ↜الـتـشـغـيـل ↶﹝${uptime}﹞
 ┆🔖 ↜الــمــســتـخـدمـيـن ↶﹝${rtotalreg}﹞
@@ -118,54 +118,40 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                                                     header: 'الــقـ🔍ـســم �لــحــاديــة عــشــر',
                                                     title: 'استدعاء_قسم_ابحث #البحث',
                                                     description: '',
-                                                    id: '.ق11']
-        }
-    ]
-}),
-messageParamsJson: "ESCONAR & BOT"
-},
-{
-    name: "quick_reply",
-    buttonParamsJson: JSON.stringify({
-        display_text: "⌈🤖╎الــيوتـيـوب╎🤖⌋",
-        id: "https://youtube.com/@es_conar1?si=f0PgS-AGCecEJnPW"
-    })
-},
-{
-    name: "cta_url",
-    buttonParamsJson: JSON.stringify({
-        display_text: "⌈🌟╎الــمــطــور╎🌟⌋",
-        url: "https://wa.me/201098829097",
-        merchant_url: "https://wa.me/201060007820"
-    })
-},
-{
-    name: "cta_url",
-    buttonParamsJson: JSON.stringify({
-        display_text: "⌈🤖╎قناة البوت╎🤖⌋",
-        url: "https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u",
-        merchant_url: "https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u"
-    })
-},
-{
-    name: "cta_url",
-    buttonParamsJson: JSON.stringify({
-        display_text: "⌈🚨╎جروبي╎🚨⌋",
-        url: "https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u",
-        merchant_url: "https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u"
-    })}
-]
-                        }
+                                                    id: '.ق11'
+                                               }
+                                            ]
+                                        }
+                                    ]
+                                }),
+                  messageParamsJson: ''
+                     },
+                     {
+               name: "cta_url",
+               buttonParamsJson: '{"display_text":"⌈📲╎رقم المطور​​​​​❣️ ╎📲⌋","url":"https://wa.me/201098829097","merchant_url":"https://wa.me/201098829097"}'
+                     },
+                     {
+               name: "cta_url",
+               buttonParamsJson: '{"display_text":"⌈📲╎رقم المطور​​​​​❣️ ╎📲⌋","url":"https://wa.me/201098829097","merchant_url":"https://wa.me/201098829097"}'
+                     },
+                     {
+               name: "cta_url",
+               buttonParamsJson: '{"display_text":"⌈📲╎رقم المطور​​​​​❣️ ╎📲⌋","url":"https://wa.me/201098829097","merchant_url":"https://wa.me/201098829097"}'
+                     },
+                     {
+               name: "cta_url",
+               buttonParamsJson: '{"display_text":"⌈📲╎رقم المطور​​​​​❣️ ╎📲⌋","url":"https://wa.me/201098829097","merchant_url":"https://wa.me/201098829097"}'
+                            }
+                        ]
                     }
                 }
             }
-    
-    
+        }
     }, {});
 }
 
 handler.help = ['info'];
 handler.tags = ['main'];
-handler.command = ['اوامر'];
+handler.command = ['مهام', 'اوامر','الاوامر','قائمة','القائمة']
 
 export default handler;
