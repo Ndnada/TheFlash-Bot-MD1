@@ -1,26 +1,26 @@
 let handler = async m => m.reply(`
 
-≡  *TheFlash-Bot-MD*
+≡  *ESCONAR-Bot-MD*
 
 _GROUP:_
 ─────────────
-▢ *Account Zack*
-https://github.com/araab-zack
+▢ *لينك شاتي*
+https://201098829097
 ─────────────
-▢ *Account Naruto*
-https://github.com/naru12348
+▢ *جروبي*
+https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u
 ─────────────
-▢ *SUPPORT_GROUP_(AR🇸🇦)*
-https://chat.whatsapp.com/I16t9p7rBz4KiLww5RI7Io
+▢ *جروبي2*
+https://chat.whatsapp.com/JTHZch9OGP5FwLjHddGCWi
 ─────────────
-▢ *SUPPORT_GROUP_(ES🇪🇸)*
-https://chat.whatsapp.com/B9Ovn2IghiFJCoSnWEgsRn
-─────────────
-▢ *YouTube*
-• https://www.youtube.com/@Zack_247
+▢ *جروبي3*
+https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u
 ─────────────
 ▢ *YouTube*
-• https://youtube.com/@user-jl2zt4nc6i?si=_nxA_D4KFhJU4ZZm
+• https://youtube.com/@es_conar1?si=izoH463TDtxTfqcQ
+─────────────
+▢ *ادعمني*
+• https://qu.ax/uuioT.jpg
 `.trim())
 handler.help = ['gpflash']
 handler.tags = ['main']
