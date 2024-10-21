@@ -24,11 +24,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     let readMore = more.repeat(850);
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
-  await conn.sendMessage(m.chat, { react: { text: '📂', key: m.key } })
+  await conn.sendMessage(m.chat, { react: { text: '📀', key: m.key } })
   const zack = 'https://qu.ax/rovX.jpg'
   const mentionId = m.key.participant || m.key.remoteJid;
  
-conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `harley`}, body: { text: `˼⚡˹↜ مـࢪحـبـا بـك/ي @${mentionId.split('@')[0]}
+conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `harley`}, body: { text: `˼👑˹↜ مـࢪحـبـا بـك/ي @${mentionId.split('@')[0]}
 > ˼🪪˹↜ مــعــلــومــاتــك ↶
 ╮───────────────────⟢ـ
 ┆⚡↜ بـريـمـيـوم↞⌊ ${user.premiumTime > 0 ? 'مــمـ🔱ـيز' : (isPrems ? 'مــمـ🔱ـيز' : 'عــ🍁ــادي') || ''} ⌉
@@ -39,12 +39,12 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
 ╯───────────────────⟢ـ
 > ˼🤖˹↜ الــبــوت↶
 ╮───────────────────⟢ـ
-┆⚙️ ↜اسـم الـبـوت↶﹝ESCONAR_BOT﹞
+┆⚙️ ↜اسـم الـبـوت↶﹝ESCONAR﹞
 ┆🪄 ↜الـمـطـور ↶﹝ESCONAR﹞
 ┆📌 ↜الـتـشـغـيـل ↶﹝${uptime}﹞
 ┆🔖 ↜الــمــســتـخـدمـيـن ↶﹝${rtotalreg}﹞
 ╯───────────────────⟢ـ
-> © ESLAM & ESCONAR 2025`,subtitle: "ESCONAR$BOT",},header: { hasMediaAttachment: true,...(await prepareWAMessageMedia({ image : { url: zack } }, { upload: conn.waUploadToServer }, {quoted: m}))},
+> ©›Es Co Naaa r ، iL P aaa reD`,subtitle: "ESCONAR$BOT",},header: { hasMediaAttachment: true,...(await prepareWAMessageMedia({ image : { url: zack } }, { upload: conn.waUploadToServer }, {quoted: m}))},
                     contextInfo: {
                         mentionedJid: [m.sender],
                         isForwarded: false,
@@ -128,19 +128,19 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                      },
                      {
                name: "cta_url",
-               buttonParamsJson: '{"display_text":"⌈📲╎رقم المطور​​​​​❣️ ╎📲⌋","url":"https://wa.me/201098829097","merchant_url":"https://wa.me/201098829097"}'
+               buttonParamsJson: '{"display_text":"⌈🚨╎قناة المطورين╎🚨⌋","url":"https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u","merchant_url":"https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u"}'
                      },
                      {
                name: "cta_url",
-               buttonParamsJson: '{"display_text":"⌈📲╎رقم المطور​​​​​❣️ ╎📲⌋","url":"https://wa.me/201098829097","merchant_url":"https://wa.me/201098829097"}'
+               buttonParamsJson: '{"display_text":"⌈🤖╎قناة البوت╎🤖⌋","url":"https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u","merchant_url":"https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u"}'
                      },
                      {
                name: "cta_url",
-               buttonParamsJson: '{"display_text":"⌈📲╎رقم المطور​​​​​❣️ ╎📲⌋","url":"https://wa.me/201098829097","merchant_url":"https://wa.me/201098829097"}'
+               buttonParamsJson: '{"display_text":"⌈🌟╎الــمــطــور╎🌟⌋","url":"https://wa.me/201098829097","merchant_url":"https://wa.me/201098829097"}'
                      },
                      {
                name: "cta_url",
-               buttonParamsJson: '{"display_text":"⌈📲╎رقم المطور​​​​​❣️ ╎📲⌋","url":"https://wa.me/201098829097","merchant_url":"https://wa.me/201098829097"}'
+               buttonParamsJson: '{"display_text":"⌈🤖╎الـ يـوتـيوب╎🤖⌋","url":"https://youtube.com/@es_conar1?si=izoH463TDtxTfqcQ","merchant_url":"https://youtube.com/@es_conar1?si=izoH463TDtxTfqcQ"}'
                             }
                         ]
                     }
