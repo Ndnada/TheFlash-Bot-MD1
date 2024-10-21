@@ -132,7 +132,7 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                      },
                      {
                name: "cta_url",
-               buttonParamsJson: '{"display_text":"⌈🤖╎قناة البوت╎🤖⌋","url":"https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u","merchant_url":"https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u"}'
+               buttonParamsJson: '{"display_text":"⌈🤖╎الــدعــم╎🤖⌋","url":".الدعم"}'
                      },
                      {
                name: "cta_url",
