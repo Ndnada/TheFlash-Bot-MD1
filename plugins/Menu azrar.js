@@ -132,7 +132,7 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                      },
                      {
                name: "cta_url",
-               buttonParamsJson: '{"display_text":"⌈🤖╎الــدعــم╎🤖⌋","url":".الدعم"}'
+               buttonParamsJson: '{"display_text":"⌈🤖╎الــدعــم╎🤖⌋","url":".الدعم","merchant_url".الدعم"}'
                      },
                      {
                name: "cta_url",
