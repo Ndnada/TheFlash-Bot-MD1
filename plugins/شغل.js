@@ -18,7 +18,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     var res = await yts(text)
     var vid = res.videos[0]
     var q = '128kbps'
-const texto1 = `اغـانـي يـوتـيـوب اسـڪـونر❣️​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​😙\n
+const texto1 = `اغــنيــههة 乂 يـوتـيـوب\n
 	✩ *العنوان ∙* ${vid.title}\n
         ✩ *المده ∙* ${vid.timestamp}\n
         ✩ *المشاهده ∙* ${vid.views}\n
@@ -77,7 +77,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
        await m.react('✅')
        } catch (error) {
         await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*\n\n` + error, m, fake,).then(_ => m.react('✖️'))
-        console.error('📀')
+        console.error(error)
     }}
     }
         
@@ -87,7 +87,7 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
     let res = await yts(text)
     let vid = res.videos[0]
     let q = '360p'
-	const texto1 = `✅ اسـڪـونر يـوتـيـوب\n
+	const texto1 = `يـؤتـيؤب 乂 ألأغنيه\n
 	✩ *العنوان ∙* ${vid.title}\n
         ✩ *المده ∙* ${vid.timestamp}\n
         ✩ *المشاهده ∙* ${vid.views}\n
@@ -121,7 +121,7 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`يزن الملف أ
        await m.react('✅')
        } catch (error) {
         await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m).then(_ => m.react('✖️'))
-        console.error('📀')
+        console.error(error)
     }}}
     
     if (command == "mp3doc") {
@@ -249,6 +249,6 @@ thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
 }
 handler.help = ["play"].map(v => v + " <formato> <búsqueda>")
 handler.tags = ["downloader"]
-handler.command = ['شغل', 'play2', 'اغاني', 'تحميل', 'mp3doc', 'mp4doc']
+handler.command = ['تشغيل', 'play2', 'شغل', 'mp4', 'mp3doc', 'mp4doc']
 handler.star = 2
 export default handler
