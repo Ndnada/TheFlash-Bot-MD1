@@ -7,16 +7,40 @@ import os from 'os';
 
 const streamPipeline = promisify(pipeline);
 
-const sendAudioWithButtons = async (conn, m, title, thumbnail, url, wm, author, tmpDir, filePath) => {
-  let buttons = [
-    {buttonId: 'prev', buttonText: {displayText: 'السابق'}, type: 1},
-    {buttonId: 'next', buttonText: {displayText: 'التالي'}, type: 1},
-  ];
-  
-  let buttonMessage = {
-    audio: { url: filePath },
+var handler = async (m, { conn, command, text, usedPrefix }) => {
+  if (!text) throw `مثال : \n ${usedPrefix}${command} midle of night`;
+
+  let search = await yts(text);
+  let vid = search.videos[Math.floor(Math.random() * search.videos.length)];
+  if (!search) throw 'Video Not Found, Try Another Title';
+  let { title, thumbnail, timestamp, views, ago, url } = vid;
+  let wm = ' 💝 ESCONARBOT'; //حط اسم بوتك
+
+  let captvid = `💝 جاري التحميل ♥`;
+
+  conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: captvid, footer: author }, { quoted: m });
+
+
+  const audioStream = ytdl(url, {
+    filter: 'audioonly',
+    quality: 'highestaudio',
+  });
+
+  // Get the path to the system's temporary directory
+  const tmpDir = os.tmpdir();
+
+  // Create writable stream in the temporary directory
+  const writableStream = fs.createWriteStream(`${tmpDir}/${title}.mp3`);
+
+  // Start the download
+  await streamPipeline(audioStream, writableStream);
+
+  let doc = {
+    audio: {
+      url: `${tmpDir}/${title}.mp3`
+    },
     mimetype: 'audio/mp4',
-    fileName: title,
+    fileName: `${title}`,
     contextInfo: {
       externalAdReply: {
         showAdAttribution: true,
@@ -25,59 +49,26 @@ const sendAudioWithButtons = async (conn, m, title, thumbnail, url, wm, author, 
         title: title,
         body: wm,
         sourceUrl: url,
-        thumbnail: await (await conn.getFile(thumbnail)).data,
-      },
-    },
-    buttons: buttons,
-    headerType: 4, // For audio messages
-    footer: 'اضغط على زر لتغيير الصوت'
+        thumbnail: await (await conn.getFile(thumbnail)).data
+      }
+    }
   };
 
-  await conn.sendMessage(m.chat, buttonMessage, { quoted: m });
+  await conn.sendMessage(m.chat, doc, { quoted: m });
 
   // Delete the audio file
-  fs.promises.unlink(filePath).catch(err => {
-    console.error(`Failed to delete audio file: ${err}`);
+  fs.unlink(`${tmpDir}/${title}.mp3`, (err) => {
+    if (err) {
+      console.error(`Failed to delete audio file: ${err}`);
+    } else {
+      console.log(`Deleted audio file: ${tmpDir}/${title}.mp3`);
+    }
   });
 };
 
-var handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `مثال : \n ${usedPrefix}${command} جديده او اسم الاغنيه الي انت عيزها💜🧸`;
-
-  let search = await yts(text);
-  if (!search.videos.length) throw 'Video Not Found, Try Another Title';
-  
-  let vid = search.videos[Math.floor(Math.random() * search.videos.length)];
-  let { title, thumbnail, url } = vid;
-  let wm = 'بوت سفروت💜🧸';
-
-  let captvid = `⏳🦋جاري التحميل `;
-
-  conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: captvid, footer: 'author' }, { quoted: m });
-
-  try {
-    const audioStream = ytdl(url, {
-      filter: 'audioonly',
-      quality: 'highestaudio',
-    });
-
-    const tmpDir = os.tmpdir();
-    const filePath = `${tmpDir}/${title}.mp3`;
-
-    const writableStream = fs.createWriteStream(filePath);
-
-    await streamPipeline(audioStream, writableStream);
-
-    await sendAudioWithButtons(conn, m, title, thumbnail, url, wm, 'author', tmpDir, filePath);
-  } catch (error) {
-    console.error(`Error downloading audio: ${error.message}`); // إضافة تسجيل مفصل للخطأ
-    throw 'Failed to download the audio. Please try again later.';
-  }
-};
-
-handler.help = ['play'].map(v => v + ' <query>');
+handler.help = ['play'].map((v) => v + ' <query>');
 handler.tags = ['downloader'];
-handler.command = ['مهرجان|اغنيه'];
+handler.command = ['اغنية', 'songs', 'ytmp3doc','اغنيه']
 
 handler.exp = 0;
 handler.diamond = false;
