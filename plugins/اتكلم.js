@@ -32,7 +32,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
 };
 handler.help = ['tts <lang> <teks>'];
 handler.tags = ['tools'];
-handler.command = /^g?قول$/i;
+handler.command = /^اتكلم$/i;
 export default handler;
 
 function tts(text, lang = 'ar') {
