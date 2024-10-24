@@ -11,7 +11,7 @@ const fakecontact = { 'key': { 'participants': '0@s.whatsapp.net', 'remoteJid': 
 
 
  let num = "201098829097"; //number owner
- let num2 = "201060007820"; //number bot
+ let num2 = "201021669137"; //number bot
  let sender = m.sender.split('@')[0];
  
  if (m.mentionedJid && m.mentionedJid[0]) {
