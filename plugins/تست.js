@@ -1,7 +1,7 @@
 import fs from 'fs';
 const handler = (m) => m;
 handler.all = async function(m) {
-  const vn = './media/خطتولي.mp3';
+  const sounds4 = "./media/الصدمه.mp3";
   const chat = global.db.data.chats[m.chat];
   if (/^تست$/i.test(m.text) && !chat.isBanned) {
     conn.sendPresenceUpdate('recording', m.chat);
