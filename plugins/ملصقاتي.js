@@ -19,7 +19,7 @@ let handler = async(m, { conn }) => {
     }
 }
 
-handler.customPrefix = /(اسكونر)$/i;
+handler.customPrefix = /(مطور|المطور|الدعم|دعم|اسكونر|سكونر)$/i;
 handler.command = new RegExp
 handler.exp = 50
 export default handler
