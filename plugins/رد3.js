@@ -7,7 +7,7 @@ await conn.sendMessage(m.chat, { react: { text: '❣️', key: m.key } })
     conn.sendFile(m.chat, 'https://qu.ax/rovX.jpg', 'image.jpg', message, m);
 };
 
-handler.customPrefix = /^اسكونر$/i;
+handler.customPrefix = /^ESCONAR$/i;
 handler.command = new RegExp;
 
 export default handler;
