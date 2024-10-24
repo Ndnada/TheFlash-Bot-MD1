@@ -9,101 +9,134 @@
 */
 
 
+import { prepareWAMessageMedia, generateWAMessageFromContent, getDevice } from  @whiskeysockets/baileys 
+import yts from  yt-search ;
+import fs from  fs ;
 
-import fetch from 'node-fetch';
-import yts from 'yt-search';
-import ytdl from 'ytdl-core';
-import axios from 'axios';
-import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
-import { prepareWAMessageMedia, generateWAMessageFromContent } from '@whiskeysockets/baileys';
-
-const handler = async (m, { command, usedPrefix, conn, args, text }) => {
-
-    if (!text) {
-      await conn.sendMessage(m.chat, { text: `*❲ ❗ ❳ يرجي إدخال نص للبحث في يوتيوب .*\nمثال :\n> ➤  ${usedPrefix + command} القرآن الكريم\n> ➤  ${usedPrefix + command} https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p` }, { quoted: m });
-      await conn.sendMessage(m.chat, { react: { text: '❗', key: m.key } });
-      return;
-    }
+const handler = async (m, { conn, text, usedPrefix, command }) => {
     
-    await conn.sendMessage(m.chat, { react: { text: '⏳', key: m.key } });
+    const device = await getDevice(m.key.id);
     
-    try {
-      const yt_play = await search(text);
-      const dataMessage = `*❲ نتيجة البحث عن : ${text} ❳*\n\n➤ العنوان : ${yt_play[0].title}\n➤ النشر : ${yt_play[0].ago}\n➤ الطول : ${secondString(yt_play[0].duration.seconds)}\n➤ الرابط : ${yt_play[0].url}\n➤ المشاهدات : ${MilesNumber(yt_play[0].views)}\n➤ الصانع : ${yt_play[0].author.name}\n➤ القناة : ${yt_play[0].author.url}`.trim();
+  if (!text) throw `*❲ ❗ ❳ يرجي إدخال نص للبحث في اليوتيوب .*\nمثال :\n> ➤  ${usedPrefix + command} القرآن الكريم\n> ➤  ${usedPrefix + command} https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p`;
+    
+  if (device !==  desktop  || device !==  web ) {      
+  await conn.sendMessage(m.chat, { react: { text:  ⏳ , key: m.key } });
+    
+  const results = await yts(text);
+  const videos = results.videos.slice(0, 30);
+  const randomIndex = Math.floor(Math.random() * videos.length);
+  const randomVideo = videos[randomIndex];
 
-      const iturl = yt_play[0].url;
-      const itimg = yt_play[0].thumbnail;
-      const messa = await prepareWAMessageMedia({ image: { url: itimg } }, { upload: conn.waUploadToServer });
-
-      let msg = generateWAMessageFromContent(m.chat, {
-        viewOnceMessage: {
-          message: {
-            interactiveMessage: {
-              body: { text: dataMessage },
-              footer: { text: `© ${global.wm}`.trim() },
-              header: {
-                hasMediaAttachment: true,
-                imageMessage: messa.imageMessage,
-              },
-              nativeFlowMessage: {
-                buttons: [
-                  { name: 'quick_reply', buttonParamsJson: JSON.stringify({ display_text: '〘 🎧 صــوتي 〙', id: `${usedPrefix}اغنية ${iturl}` }) },
-                  { name: 'quick_reply', buttonParamsJson: JSON.stringify({ display_text: '〘 🎥 فيــديو 〙', id: `${usedPrefix} فيديو ${iturl}` }) },
-                  { name: 'quick_reply', buttonParamsJson: JSON.stringify({ display_text: '〘 🎤 فــويس 〙', id: `${usedPrefix}ريك ${iturl}` }) },
-                  { name: 'quick_reply', buttonParamsJson: JSON.stringify({ display_text: '〘 📹 جيــف 〙', id: `${usedPrefix}جيف ${iturl}` }) },
-                  { name: 'quick_reply', buttonParamsJson: JSON.stringify({ display_text: '〘 📻 ملــف صــوتي 〙', id: `${usedPrefix}صوت ${iturl}` }) },
-                  { name: 'quick_reply', buttonParamsJson: JSON.stringify({ display_text: '〘 📺 ملــف فيــديو 〙', id: `${usedPrefix}فيد ${iturl}` }) }
-                ],
-                messageParamsJson: "",
-              },
-            },
-          },
+  var messa = await prepareWAMessageMedia({ image: {url: randomVideo.thumbnail}}, { upload: conn.waUploadToServer });
+  
+  const imagurl =  https://files.catbox.moe/hm0l6b.jpg ;
+ 
+ let chname =  ⛊  𝚂𝙰𝚈𝙴𝙳-𝚂𝙷𝙰𝚆𝙰𝚉𝙰 ;
+ let chid =  120363316635505389@newsletter ;
+  
+  const captain = `*⎙ نتائج البحث:* ${results.videos.length}\n\n*⛊ النتيجة:*\n*-› العنوان:* ${randomVideo.title}\n*-› الصانع:* ${randomVideo.author.name}\n*-› المشاهدات:* ${randomVideo.views}\n*-› الرابط:* ${randomVideo.url}\n*-› البوستر:* ${randomVideo.thumbnail}\n\n> 🗃️اختر من القائمه بالاسفل🧞.\n\n`.trim();
+  
+  const interactiveMessage = {
+    body: { text: captain },
+    footer: { text: `${global.wm}`.trim() },  
+      header: {
+          title: `*❲ بحث اليوتيوب ❳*\n`,
+          hasMediaAttachment: true,
+          imageMessage: messa.imageMessage,
+      },
+      contextInfo: {
+        mentionedJid: await conn.parseMention(captain), 
+        isForwarded: true, 
+        forwardingScore: 1, 
+        forwardedNewsletterMessageInfo: {
+        newsletterJid: chid, 
+        newsletterName: chname, 
+        serverMessageId: 100
         },
-      }, { userJid: conn.user.jid, quoted: m });
-
-      await conn.sendMessage(m.chat, { react: { text: '✔️', key: m.key } });
-      
-      await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id });
-
-    } catch {
-      await conn.sendMessage(m.chat, { text: `*❲ ❗ ❳ حدث خطأ عند البحث في يوتيوب .*\nيرجي ادخال نص صحيح أو رابط مثال :\n> ➤  ${usedPrefix + command} القرآن الكريم\n> ➤  ${usedPrefix + command} https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p` }, { quoted: m });
-      await conn.sendMessage(m.chat, { react: { text: '❌', key: m.key } });
+        externalAdReply: {
+        showAdAttribution: true,
+          title: "⋄┄〘 بحــث اليــوتيوب 〙┄⋄",
+          body: "❲ التحــميلات ❳",
+          thumbnailUrl: imagurl,
+          mediaUrl: imagurl,
+          mediaType: 1,
+          sourceUrl:  https://www.atom.bio/shawaza-2000/ ,
+          renderLargerThumbnail: false
+        }
+      },
+    nativeFlowMessage: {
+      buttons: [
+        {
+          name:  single_select ,
+          buttonParamsJson: JSON.stringify({
+            title:  ❲ قائمة النتائج ❳ ,
+            sections: videos.map((video) => ({
+              title: video.title,
+              rows: [
+                {
+                  header: video.title,
+                  title: video.author.name,
+                  description:  〘 🎧 صــوتي 〙 ,
+                  id: `${usedPrefix}اغنيه ${video.url}`
+                },
+                  {
+                  header: video.title,
+                  title: video.author.name,
+                  description:  〘 🎥 فيــديو 〙 ,
+                  id: `${usedPrefix}فيديو ${video.url}`
+                },
+                {
+                  header: video.title,
+                  title: video.author.name,
+                  description:  〘 🎤 فــويس 〙 ,
+                  id: `${usedPrefix}ريك ${video.url}`
+                },                
+                  {
+                  header: video.title,
+                  title: video.author.name,
+                  description:  〘 📹 جيــف 〙 ,
+                  id: `${usedPrefix}جيف ${video.url}`
+                }
+              ]
+            }))
+          })
+        }
+      ],
+      messageParamsJson:   
     }
+  };        
+            
+        let msg = generateWAMessageFromContent(m.chat, {
+            viewOnceMessage: {
+                message: {
+                    interactiveMessage,
+                },
+            },
+        }, { userJid: conn.user.jid, quoted: m })
+        
+        await conn.sendMessage(m.chat, { react: { text:  ✔️ , key: m.key } });
+      conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id});
 
+  } else {
+  
+  const results = await yts(text);
+  const tes = results.all;
+  
+  const teks = results.all.map((v) => {
+    switch (v.type) {
+      case  video : return `
+° *العنوان:* ${v.title}
+↳ 🫐 *الرابط:* ${v.url}
+↳ 🕒 *المدة:* ${v.timestamp}
+↳ 📥 *منذ:* ${v.ago}
+↳ 👁 *المشاهدات:* ${v.views}`;
+    }
+  }).filter((v) => v).join( \n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n );
+  
+  conn.sendFile(m.chat, tes[0].thumbnail,  error.jpg , teks.trim(), m);      
+  }    
 };
-
-handler.command = /^(شغل)$/i;
+handler.help = [ ytsearch <texto> ];
+handler.tags = [ search ];
+handler.command = /^(ytsearch|yts|شغل)$/i;
 export default handler;
-
-async function search(query, options = {}) {
-  const search = await yts.search({ query, hl: 'ar', gl: 'AR', ...options });
-  return search.videos;
-}
-
-function MilesNumber(number) {
-  const exp = /(\d)(?=(\d{3})+(?!\d))/g;
-  const rep = '$1.';
-  const arr = number.toString().split('.');
-  arr[0] = arr[0].replace(exp, rep);
-  return arr[1] ? arr.join('.') : arr[0];
-}
-
-function secondString(seconds) {
-  seconds = Number(seconds);
-  const d = Math.floor(seconds / (3600 * 24));
-  const h = Math.floor((seconds % (3600 * 24)) / 3600);
-  const m = Math.floor((seconds % 3600) / 60);
-  const s = Math.floor(seconds % 60);
-  const dDisplay = d > 0 ? d + (d == 1 ? ' día, ' : ' días, ') : '';
-  const hDisplay = h > 0 ? h + (h == 1 ? ' hora, ' : ' horas, ') : '';
-  const mDisplay = m > 0 ? m + (m == 1 ? ' minuto, ' : ' minutos, ') : '';
-  const sDisplay = s > 0 ? s + (s == 1 ? ' segundo' : ' segundos') : '';
-  return dDisplay + hDisplay + mDisplay + sDisplay;
-}
-
-function bytesToSize(bytes) {
-  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
-  if (bytes === 0) return 'n/a';
-  const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10);
-  return i === 0 ? `${bytes} ${sizes[i]}` : `${(bytes / (1024 ** i)).toFixed(1)} ${sizes[i]}`;
-                                                 }
