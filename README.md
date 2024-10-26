@@ -1,5 +1,5 @@
 <p align="center">
- <img width="180px" src="(https://qu.ax/rovX.jpg)" align="center"/>
+ <img width="180px" src="[https://qu.ax/rovX.jpg]" align="center"/>
  <h2 align="center">TheESCONAR-Bot-MD</h2>
  <p align="center">Este bot fue desarrollado por Zack y Naruto.</p>
 </p>
@@ -14,7 +14,7 @@
 
 # `تــم صــنــع وتــطــويــر هــذا الــبــوت بــواســطــة اسـڪونـر` 
 <p align="center">
-<img src="[https://envs.sh/06H.jpg](https://qu.ax/rovX.jpg)" alt="⁨ESCONARBOT" width="900"/>
+<img src="[https://qu.ax/rovX.jpg][https://qu.ax/rovX.jpg]" alt="⁨ESCONARBOT" width="900"/>
 </p>
 
 ------------------
@@ -32,9 +32,9 @@
 ### `▢ مجموعات الدعم (المتوفرة)`
 ### `▢ Grupos de apoyo (Disponibles)`
 
- <a href="[https://chat.whatsapp.com/H93YpO0LkJNHoTmtIhcL1z](https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u)" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(AR)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+ <a href="[https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u]" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(AR)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
-<a href="[https://chat.whatsapp.com/H93YpO0LkJNHoTmtIhcL1z](https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u)" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(ES)_-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="[https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u]" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(ES)_-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 > [ 📌 ] لا يُسمح بالبوتات الاخري في مجموعات الدعم.
 
@@ -53,7 +53,7 @@
 
 ### `▢ Desarrollador oficial de YouTube (activo)`
 
-<a href="[https://www.youtube.com/@Zack_247](https://youtube.com/@es_conar1?si=pWo2Z_-It5XSDC3t)">
+<a href="[https://youtube.com/@es_conar1?si=pWo2Z_-It5XSDC3t]">
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
 </a>
 
