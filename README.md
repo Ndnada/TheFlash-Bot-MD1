@@ -5,16 +5,16 @@
 </p>
 
 <p align="center">
-  <a href="https://api.whatsapp.com/send?phone=+265884756906&text=&text=.menu">Comunicarse con el bot</a>
+  <a href="https://api.whatsapp.com/send?phone=+201098829097&text=&text=.menu">Comunicarse con el bot</a>
 
 <p align="center">
-  <a href="https://api.whatsapp.com/send?phone=+265884756906&text=&text=.اوامر">الــتــواصـل مـع الــبــوت</a>
+  <a href="https://api.whatsapp.com/send?phone=+201021669137&text=&text=.اوامر">الــتــواصـل مـع الــبــوت</a>
 
-# `Flash-Bot` 
+# `ESCONAR-Bot` 
 
 # `تــم صــنــع وتــطــويــر هــذا الــبــوت بــواســطــة عــراب زاك و نــاروتــو` 
 <p align="center">
-<img src="https://envs.sh/06H.jpg" alt="⁨عــراب زاك⁩" width="900"/>
+<img src="[https://envs.sh/06H.jpg](https://qu.ax/rovX.jpg)" alt="⁨اسكونر الغشيم" width="900"/>
 </p>
 
 ------------------
@@ -25,16 +25,16 @@
 > El idioma principal en el que trabajaron los desarrolladores es el árabe y el Español.
 ### `▢ الحسابات الرسمية`
 
-[ 🔗 ] https://github.com/araab-zack
+[ 🔗 ] https://github.com/esconar-zack
 
-[ 🔗 ] https://github.com/naru12348
+[ 🔗 ] https://github.com/esconarbot
 
 ### `▢ مجموعات الدعم (المتوفرة)`
 ### `▢ Grupos de apoyo (Disponibles)`
 
- <a href="https://chat.whatsapp.com/H93YpO0LkJNHoTmtIhcL1z" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(AR)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+ <a href="[https://chat.whatsapp.com/H93YpO0LkJNHoTmtIhcL1z](https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u)" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(AR)-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
-<a href="https://chat.whatsapp.com/H93YpO0LkJNHoTmtIhcL1z" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(ES)_-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="[https://chat.whatsapp.com/H93YpO0LkJNHoTmtIhcL1z](https://whatsapp.com/channel/0029VasNaVr7T8bPaW6E1Z1u)" target="blank"><img src="https://img.shields.io/badge/SUPPORT_GROUP_(ES)_-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 > [ 📌 ] لا يُسمح بالبوتات الاخري في مجموعات الدعم.
 
@@ -45,15 +45,15 @@
 ### `▢ Números oficiales de desarrolladores (activos)`
 
 
-<a href="https://api.whatsapp.com/send/?phone=972546887176&text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Owner_Bot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://api.whatsapp.com/send/?phone=201098829097&text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Owner_Bot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-<a href="https://api.whatsapp.com/send/?phone=201224563219&text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Owner_Bot2-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://api.whatsapp.com/send/?phone=201021669137&text=/estado&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Owner_Bot2-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ### `▢يوتيوب المطور الرسمي (نشط)`
 
 ### `▢ Desarrollador oficial de YouTube (activo)`
 
-<a href="https://www.youtube.com/@Zack_247">
+<a href="[https://www.youtube.com/@Zack_247](https://youtube.com/@es_conar1?si=pWo2Z_-It5XSDC3t)">
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
 </a>
 
@@ -61,7 +61,7 @@
 
 ### `▢ Desarrollador oficial de YouTube2 (activo)`
 
-<a href="https://www.youtube.com/@Zack_247">
+<a href="[https://www.youtube.com/@Zack_247](https://youtube.com/@es_conar1?si=pWo2Z_-It5XSDC3t)">
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
 </a>
 
@@ -69,7 +69,7 @@
 
 ### 📁 طريقة رفع البوت عبر تيرموكس 🙌
 ### 📁 Cómo subir el bot vía Termux 🙌
-### [`FlashBot-MD ~ فريق الدعم - equipo de soporte`](https://api.whatsapp.com/send/?phone=972546887176&text=/estado&type=phone_number&app_absent=0)
+### [`ESCONARBOT-MD ~ فريق الدعم - equipo de soporte`](https://api.whatsapp.com/send/?phone=201098829097&text=/estado&type=phone_number&app_absent=0)
 ```bash
 termux-setup-storage
 ```
