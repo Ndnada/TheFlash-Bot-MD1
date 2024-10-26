@@ -1,5 +1,5 @@
 <p align="center">
- <img width="180px" src="https://envs.sh/wHc.jpg" align="center"/>
+ <img width="180px" src="[https://envs.sh/wHc.jpg](https://qu.ax/rovX.jpg)" align="center"/>
  <h2 align="center">TheFlash-Bot-MD</h2>
  <p align="center">Este bot fue desarrollado por Zack y Naruto.</p>
 </p>
@@ -12,9 +12,9 @@
 
 # `ESCONAR-Bot` 
 
-# `تــم صــنــع وتــطــويــر هــذا الــبــوت بــواســطــة عــراب زاك و نــاروتــو` 
+# `تــم صــنــع وتــطــويــر هــذا الــبــوت بــواســطــة اسـڪونـر` 
 <p align="center">
-<img src="[https://envs.sh/06H.jpg](https://qu.ax/rovX.jpg)" alt="⁨اسكونر الغشيم" width="900"/>
+<img src="[https://envs.sh/06H.jpg](https://qu.ax/rovX.jpg)" alt="⁨ESCONARBOT" width="900"/>
 </p>
 
 ------------------
@@ -25,7 +25,7 @@
 > El idioma principal en el que trabajaron los desarrolladores es el árabe y el Español.
 ### `▢ الحسابات الرسمية`
 
-[ 🔗 ] https://github.com/esconar-zack
+[ 🔗 ] https://github.com/esconar
 
 [ 🔗 ] https://github.com/esconarbot
 
