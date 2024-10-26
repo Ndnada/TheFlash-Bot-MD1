@@ -1,6 +1,6 @@
 <p align="center">
- <img width="180px" src="[https://envs.sh/wHc.jpg](https://qu.ax/rovX.jpg)" align="center"/>
- <h2 align="center">TheFlash-Bot-MD</h2>
+ <img width="180px" src="(https://qu.ax/rovX.jpg)" align="center"/>
+ <h2 align="center">TheESCONAR-Bot-MD</h2>
  <p align="center">Este bot fue desarrollado por Zack y Naruto.</p>
 </p>
 
