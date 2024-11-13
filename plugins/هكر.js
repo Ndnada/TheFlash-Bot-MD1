@@ -32,7 +32,7 @@ const handler = async (m, { conn, command, text }) => {
   const response =
     `━━━━━━━⬣ *😈* ⬣━━━━━━━\n` +
     `*تم اختراقك بنجاح*✅, ${text}   ${loveDescription}   *تم اختراقك بواسطه 𝐍 بوت بياناتك عند شات المطور*\n\n` +
-    `*بوت اسكونر😈💜*\n` +
+    `*بوت 𝐍😈💜*\n` +
     `━━━━━━━⬣ *😈* ⬣━━━━━━━`    
   
   async function loading() {
