@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `*فين النص؟*`
+    if (!text) throw `*بوت؟*`
     try {
         await conn.updateProfileName(text)
         m.reply('*تم التغيير😎*')
@@ -10,7 +10,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = ['setbotname <نص>']
 handler.tags = ['owner']
-handler.command = /^(اسم_البوت)$/i
+handler.command = /^(𝐍𝐀𝐃𝐀_𝐁𝐎𝐓)$/i
 
 handler.owner = true
 
