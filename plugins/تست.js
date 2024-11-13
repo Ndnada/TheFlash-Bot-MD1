@@ -5,10 +5,10 @@ let handler = m => m;
 
    let chat = global.db.data.chats[m.chat]; 
    let responses; 
-   if (/^تيست$/i.test(m.text)) { 
+   if (/^تست$/i.test(m.text)) { 
      responses = ['*𝐖𝐎𝐑𝐊𝐈𝐍𝐆..💋*']; 
  }
-  if (/^تيست$/i.test(m.text)) {
+  if (/^تست$/i.test(m.text)) {
     let vn =     'https://qu.ax/cZJu'    ;
     conn.sendPresenceUpdate(    'recording'    , m.chat);
     conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:     'audio/mpeg'    , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
