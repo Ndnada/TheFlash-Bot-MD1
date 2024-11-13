@@ -13,8 +13,8 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["201098829097", '👑 ESLAM - ESCONAR 👑', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
-["201098829097", '💫 ESCONAR - ELFAGER 💫', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
+["971542655407", '👑 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 👑', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💋
+["971542655407", '💫 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 💫', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💋
 ]
 
 
@@ -117,9 +117,9 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["201098829097", '👑 ESLAM - ESCONAR 👑', 1], 
-["201098829097", '💫 ESCONAR - ELFAGER 💫', 1],  
-["201098829097", '👑 ESCONAR - BOT 👑', 1]]
+["971542655407", '💋 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 👑', 1], 
+["971542655407", '💫 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 💫', 1],  
+["971542655407", '💋 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 👑', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -127,8 +127,8 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = `ESCONAR﹝❣️﹞ELFAGER` //"𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 🐈"
-global.author = `ESCONAR EL REZZEL` //"𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨"
+global.packname = `𝐍𝐀𝐃𝐀﹝❣️﹞ELFAGER` //"𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 "
+global.author = `𝐍𝐀𝐃𝐀 EL REZZEL` //"𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
@@ -164,9 +164,9 @@ global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎�
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "ESCONAR﹝❣️﹞BOT"
-global.igfg = "ESCONAR ELFAGER"
-global.nomorown = "201098829097"
+global.wm = "𝐍𝐀𝐃𝐀﹝💋﹞BOT"
+global.igfg = "𝐍𝐀𝐃𝐀 𝐁𝐎𝐓"
+global.nomorown = "971542655407"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
