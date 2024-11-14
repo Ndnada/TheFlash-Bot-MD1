@@ -6,7 +6,7 @@ let handler = m => m;
    let chat = global.db.data.chats[m.chat]; 
    let responses; 
    if (/^تست$/i.test(m.text)) { 
-     responses = ['*𝐖𝐎𝐑𝐊𝐈𝐍𝐆..💋*']; 
+     responses = ['*𝐖𝐎𝐑𝐊𝐈𝐍𝐆*']; 
  }
   if (/^تست$/i.test(m.text)) {
     let vn =     'https://qu.ax/cZJu'    ;
