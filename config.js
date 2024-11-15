@@ -13,8 +13,8 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["201556982959", '👑 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 👑', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💋
-["201556982959", '💫 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 💫', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💋
+["201556982959", '👑  - 𝐁𝐎𝐓 👑', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💋
+["201556982959", '💫  - 𝐁𝐎𝐓 💫', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💋
 ]
 
 
@@ -117,9 +117,9 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["201556982959", '💋 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 👑', 1], 
-["201556982959", '💫 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 💫', 1],  
-["201556982959", '💋 𝐍𝐀𝐃𝐀 - 𝐁𝐎𝐓 👑', 1]]
+["201556982959", '💋 𝐁𝐎𝐓 - 𝐁𝐎𝐓 👑', 1], 
+["201556982959", '💫 𝐁𝐎𝐓 - 𝐁𝐎𝐓 💫', 1],  
+["201556982959", '💋 𝐁𝐎𝐓 - 𝐁𝐎𝐓 👑', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -127,8 +127,8 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = `𝐍𝐀𝐃𝐀﹝❣️﹞ELFAGER` //"𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 "
-global.author = `𝐍𝐀𝐃𝐀 EL REZZEL` //"𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨"
+global.packname = `𝐁𝐎𝐓﹝❣️﹞ELFAGER` //"𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 "
+global.author = `𝐁𝐎𝐓 EL REZZEL` //"𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
